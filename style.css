@@ -2,7 +2,17 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
+font-family:'Cairo',sans-serif;
+}
+
+html{
+font-family:'Cairo',sans-serif;
+}
+
+body{
+font-family:'Cairo',sans-serif;
+background:#f7f9fc;
+color:#222;
 }
 
 body{

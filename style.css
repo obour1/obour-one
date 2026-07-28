@@ -78,7 +78,28 @@ text-align:center;
 color:white;
 padding:50px 8%;
 }
+.breaking-news{
+display:flex;
+align-items:center;
+background:white;
+border-bottom:1px solid #ddd;
+overflow:hidden;
+}
 
+.breaking-title{
+background:#ff0000;
+color:white;
+font-weight:900;
+padding:15px 25px;
+font-size:20px;
+}
+
+.breaking-content{
+padding:15px 25px;
+font-size:18px;
+font-weight:700;
+color:#333;
+}
 .hero h2{
 font-size:65px;
 font-weight:900;

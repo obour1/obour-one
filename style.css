@@ -2,37 +2,49 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Cairo',sans-serif;
-background:#f5f7fb;
+background:#f7f9fc;
 color:#222;
+}
+
+header{
+background:#0B57D0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 .container{
 max-width:1200px;
 margin:auto;
+padding:15px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
 }
 
-header{
-background:#0B5FFF;
-color:white;
-position:sticky;
-top:0;
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:50%;
+background:white;
 }
 
 .logo h1{
-font-size:34px;
-}
-
-.logo p{
-font-size:14px;
-opacity:.9;
+color:white;
+font-size:32px;
+font-weight:900;
 }
 
 nav{
@@ -46,41 +58,96 @@ text-decoration:none;
 font-weight:700;
 }
 
+nav a:hover{
+color:#ff8300;
+}
+
+
 .hero{
-height:85vh;
+min-height:85vh;
+background:linear-gradient(135deg,#0B57D0,#003A99);
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#0B5FFF,#1849c6);
 color:white;
-padding:20px;
+padding:50px 8%;
 }
 
 .hero h2{
-font-size:58px;
-margin-bottom:20px;
+font-size:65px;
+font-weight:900;
 }
 
 .hero p{
 font-size:24px;
-margin-bottom:35px;
+line-height:1.8;
+margin:25px 0;
 }
 
+
 .btn{
-background:#FF7A00;
+display:inline-block;
+background:#ff8300;
 color:white;
+padding:15px 40px;
+border-radius:50px;
 text-decoration:none;
-padding:18px 45px;
-border-radius:10px;
-font-size:22px;
+font-size:20px;
 font-weight:bold;
 }
+
+
+.section{
+padding:80px 8%;
+}
+
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#0B57D0;
+margin-bottom:40px;
+}
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+
+.card h3{
+color:#0B57D0;
+margin-bottom:15px;
+}
+
 
 footer{
 background:#111827;
 color:white;
 text-align:center;
 padding:30px;
+}
+
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h2{
+font-size:45px;
+}
+
 }

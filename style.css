@@ -1,240 +1,480 @@
+/* =====================================================
+   Obour One v2.0
+   ===================================================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Cairo',sans-serif;
+}
+
+:root{
+
+    --primary:#0B57D0;
+    --secondary:#FF8300;
+    --dark:#111827;
+    --light:#F7F9FC;
+    --white:#ffffff;
+    --text:#222;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
 }
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 body{
-    background:#f7f9fc;
-    color:#222;
-    line-height:1.6;
+
+    font-family:'Cairo',sans-serif;
+    background:var(--light);
+    color:var(--text);
+
 }
 
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+} 
 /* ================= HEADER ================= */
 
 header{
-    background:#0B57D0;
+
+    background:var(--primary);
+
     position:sticky;
+
     top:0;
+
     z-index:999;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    box-shadow:var(--shadow);
+
 }
 
 .container{
-    max-width:1200px;
+
+    width:min(1200px,92%);
+
     margin:auto;
-    padding:12px 5%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
+    padding:15px 0;
+
 }
 
 .logo{
+
     display:flex;
+
     align-items:center;
+
     gap:15px;
+
 }
 
 .logo img{
-    width:80px;
-    height:80px;
+
+    width:78px;
+
+    height:78px;
+
     object-fit:contain;
+
     background:#fff;
+
     border-radius:50%;
-    padding:5px;
+
+    padding:4px;
+
 }
 
-.logo h1{
+.logo-text h1{
+
     color:#fff;
-    font-size:32px;
+
+    font-size:30px;
+
     font-weight:900;
+
 }
 
-/* ================= NAVIGATION ================= */
+.logo-text span{
+
+    color:#FFD166;
+
+    font-size:14px;
+
+}
 
 nav{
+
     display:flex;
-    gap:25px;
+
+    gap:22px;
+
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
+
+    color:white;
+
     font-weight:700;
+
     transition:.3s;
+
 }
 
 nav a:hover{
-    color:#ff8300;
+
+    color:var(--secondary);
+
 }
-
-/* ================= BREAKING NEWS ================= */
-
-.breaking-news{
-    display:flex;
-    align-items:center;
-    background:#fff;
-    border-bottom:1px solid #ddd;
-}
-
-.breaking-title{
-    background:#e60000;
-    color:#fff;
-    padding:15px 25px;
-    font-size:18px;
-    font-weight:900;
-}
-
-.breaking-content{
-    padding:15px 25px;
-    font-size:17px;
-    font-weight:700;
-    color:#333;
-}
-
 /* ================= HERO ================= */
 
 .hero{
+
     min-height:85vh;
-    background:linear-gradient(135deg,#0B57D0,#003A99);
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(11,87,208,.95),
+        rgba(0,58,153,.95)
+    );
+
     display:flex;
-    justify-content:center;
+
     align-items:center;
+
+    justify-content:center;
+
     text-align:center;
-    color:#fff;
-    padding:60px 8%;
+
+    color:white;
+
+    padding:80px 20px;
+
 }
 
-.hero h2{
-    font-size:64px;
-    margin-bottom:20px;
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:72px;
+
     font-weight:900;
+
+    margin-bottom:10px;
+
 }
 
-.hero p{
-    font-size:24px;
-    line-height:1.8;
-    margin-bottom:35px;
+
+.hero-content h2{
+
+    font-size:38px;
+
+    color:#FFD166;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
 }
+
+
+.hero-content p{
+
+    font-size:22px;
+
+    line-height:2;
+
+    margin-bottom:40px;
+
+}
+
 
 /* ================= BUTTONS ================= */
 
-.btn{
-    display:inline-block;
-    background:#ff8300;
-    color:#fff;
-    text-decoration:none;
-    padding:15px 40px;
-    border-radius:50px;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
 }
+
+
+.btn{
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary{
+
+    background:var(--secondary);
+
+    color:white;
+
+}
+
+
+.btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
 
 .btn:hover{
-    transform:translateY(-3px);
-}
 
+    transform:translateY(-5px);
+
+}
 /* ================= SECTIONS ================= */
 
+
 .section{
-    padding:80px 8%;
+
+    padding:90px 5%;
+
 }
 
+
 .section-title{
+
     text-align:center;
+
     font-size:42px;
-    color:#0B57D0;
-    margin-bottom:45px;
+
     font-weight:900;
+
+    color:var(--primary);
+
+    margin-bottom:50px;
+
 }
+
 
 /* ================= CARDS ================= */
 
+
 .cards{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
 }
+
 
 .card{
-    background:#fff;
-    padding:30px;
+
+    background:white;
+
+    padding:35px;
+
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    box-shadow:var(--shadow);
+
     transition:.3s;
+
+    text-align:center;
+
 }
+
 
 .card:hover{
-    transform:translateY(-8px);
+
+    transform:translateY(-10px);
+
 }
+
 
 .card h3{
-    color:#0B57D0;
+
+    color:var(--primary);
+
+    font-size:26px;
+
     margin-bottom:15px;
+
 }
+
 
 .card p{
-    color:#555;
-    line-height:1.8;
-}
 
+    line-height:1.8;
+
+    color:#555;
+
+}
 /* ================= FOOTER ================= */
 
 footer{
-    background:#111827;
-    color:#fff;
+
+    background:var(--dark);
+
+    color:white;
+
     text-align:center;
-    padding:30px;
+
+    padding:35px 20px;
+
+    font-size:16px;
+
 }
 
-/* ================= MOBILE ================= */
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
 
 @media(max-width:900px){
 
+
     .container{
+
         flex-direction:column;
+
         gap:15px;
+
     }
+
 
     nav{
+
         display:none;
+
     }
 
-    .hero{
-        padding:120px 8% 60px;
-    }
-
-    .hero h2{
-        font-size:42px;
-    }
-
-    .hero p{
-        font-size:20px;
-    }
 
     .logo img{
+
         width:65px;
+
         height:65px;
+
     }
 
-    .logo h1{
+
+    .logo-text h1{
+
         font-size:26px;
+
     }
 
-    .breaking-news{
-        flex-direction:column;
+
+    .hero{
+
+        min-height:75vh;
+
+        padding:60px 20px;
+
     }
 
-    .breaking-title,
-    .breaking-content{
+
+    .hero-content h1{
+
+        font-size:45px;
+
+    }
+
+
+    .hero-content h2{
+
+        font-size:28px;
+
+    }
+
+
+    .hero-content p{
+
+        font-size:18px;
+
+    }
+
+
+    .section-title{
+
+        font-size:32px;
+
+    }
+
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ================= SMALL DEVICES ================= */
+
+
+@media(max-width:500px){
+
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+
+    .btn{
+
         width:100%;
-        text-align:center;
+
     }
+
 
 }

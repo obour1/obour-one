@@ -478,3 +478,37 @@ footer{
 
 
 }
+/* ===== Breaking News v2 ===== */
+
+.breaking-news{
+    display:flex;
+    align-items:center;
+    background:#c40000;
+    color:#fff;
+    height:55px;
+    overflow:hidden;
+}
+
+.breaking-label{
+    background:#980000;
+    padding:0 25px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    font-size:20px;
+    font-weight:800;
+}
+
+.breaking-text{
+    flex:1;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+}
+
+.breaking-text marquee{
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    width:100%;
+}

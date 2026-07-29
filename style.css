@@ -501,3 +501,47 @@ footer{
 .news-card a:hover{
     text-decoration:underline;
 }
+/* ================= RADIO LIVE ================= */
+
+.radio-section{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.radio-card{
+    max-width:900px;
+    margin:0 auto;
+    background:linear-gradient(135deg,#0B57D0,#003A99);
+    color:#fff;
+    text-align:center;
+    border-radius:20px;
+    padding:50px 30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.radio-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.radio-card h3{
+    font-size:36px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.radio-card p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+    color:#f3f3f3;
+}
+
+.radio-card .btn{
+    background:#ff8300;
+    color:#fff;
+}
+
+.radio-card .btn:hover{
+    background:#ff9800;
+}

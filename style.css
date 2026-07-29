@@ -589,3 +589,46 @@ footer{
     line-height:1.8;
     font-size:17px;
 }
+/* ================= JOBS SECTION ================= */
+
+.jobs-section{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.jobs-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.job-card{
+    background:#f8f9fc;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #0B57D0;
+}
+
+.job-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.job-card h3{
+    color:#0B57D0;
+    font-size:24px;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.job-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.job-card .btn{
+    display:inline-block;
+}

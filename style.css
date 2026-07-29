@@ -675,3 +675,68 @@ footer{
 .realestate-card .btn{
     display:inline-block;
 }
+/* ================= EVENTS SECTION ================= */
+
+.events-section{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.events-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    transition:.35s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.event-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.event-content{
+    padding:25px;
+}
+
+.event-date{
+    display:inline-block;
+    background:#0B57D0;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.event-content h3{
+    color:#0B57D0;
+    font-size:24px;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.event-content p{
+    color:#555;
+    font-size:17px;
+    margin-bottom:12px;
+    line-height:1.7;
+}
+
+.event-content .btn{
+    margin-top:15px;
+}

@@ -1042,3 +1042,29 @@ nav a.active::after{
 }
 
 }
+/* ================= NEWS CATEGORIES ================= */
+
+.news-categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.news-categories a{
+    text-decoration:none;
+    background:#fff;
+    color:#0B57D0;
+    border:2px solid #0B57D0;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.news-categories a:hover,
+.news-categories a.active{
+    background:#0B57D0;
+    color:#fff;
+}

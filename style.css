@@ -948,3 +948,47 @@ nav a.active::after{
     background:#FF8300;
     border-radius:10px;
 }
+/* ================= TRENDING NEWS ================= */
+
+.trending-news{
+    margin-top:30px;
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.trending-news h3{
+    color:#0B57D0;
+    font-size:26px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.trending-news ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.trending-news li{
+    border-bottom:1px solid #eee;
+}
+
+.trending-news li:last-child{
+    border-bottom:none;
+}
+
+.trending-news a{
+    display:block;
+    padding:15px 0;
+    color:#333;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.trending-news a:hover{
+    color:#FF8300;
+    padding-right:10px;
+}

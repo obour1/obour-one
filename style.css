@@ -803,11 +803,18 @@ nav a:hover{
     background:#f5f7fb;
 }
 
-.news-grid{
+..news-grid{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:35px;
     align-items:start;
+    direction:ltr;
+}
+
+.main-news,
+.side-news,
+.trending-news{
+    direction:rtl;
 }
 
 .main-news{

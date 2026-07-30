@@ -582,7 +582,6 @@ nav a:hover{
     line-height:1.8;
     font-size:17px;
 }
-}
 /* ================= JOBS SECTION ================= */
 
 .jobs-section{
@@ -626,7 +625,6 @@ nav a:hover{
 
 .job-card .btn{
     display:inline-block;
-}
 }
 /* ================= EVENTS SECTION ================= */
 
@@ -803,7 +801,7 @@ nav a:hover{
     background:#f5f7fb;
 }
 
-..news-grid{
+.news-grid{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:35px;

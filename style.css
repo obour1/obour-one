@@ -796,3 +796,137 @@ nav a:hover{
 .realestate-card .btn{
     display:inline-block;
 }
+/* ================= NEWS PAGE ================= */
+
+.news-page{
+    padding:80px 0;
+    background:#f5f7fb;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+    align-items:start;
+}
+
+.main-news{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+.main-news img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    display:block;
+}
+
+.main-news-content{
+    padding:35px;
+}
+
+.news-category{
+    display:inline-block;
+    background:#0B57D0;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.main-news-content h2{
+    font-size:36px;
+    color:#222;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.main-news-content p{
+    font-size:19px;
+    color:#666;
+    line-height:2;
+    margin-bottom:30px;
+}
+
+.side-news{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.side-news-card{
+    display:flex;
+    gap:18px;
+    background:#fff;
+    padding:15px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.side-news-card:hover{
+    transform:translateY(-5px);
+}
+
+.side-news-card img{
+    width:110px;
+    height:110px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.side-news-card span{
+    color:#0B57D0;
+    font-weight:700;
+    font-size:14px;
+}
+
+.side-news-card h4{
+    margin-top:10px;
+    font-size:19px;
+    color:#222;
+    line-height:1.6;
+}
+/* ================= NEWS RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.news-grid{
+    grid-template-columns:1fr;
+}
+
+.main-news img{
+    height:350px;
+}
+
+}
+
+@media(max-width:768px){
+
+.main-news-content{
+    padding:25px;
+}
+
+.main-news-content h2{
+    font-size:28px;
+}
+
+.main-news-content p{
+    font-size:17px;
+}
+
+.side-news-card{
+    flex-direction:column;
+}
+
+.side-news-card img{
+    width:100%;
+    height:220px;
+}
+
+}

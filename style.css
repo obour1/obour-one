@@ -992,3 +992,53 @@ nav a.active::after{
     color:#FF8300;
     padding-right:10px;
 }
+/* ================= NEWS SEARCH ================= */
+
+.news-search{
+    display:flex;
+    gap:15px;
+    margin:0 auto 40px;
+    max-width:700px;
+}
+
+.news-search input{
+    flex:1;
+    padding:16px 20px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:17px;
+    outline:none;
+    transition:.3s;
+}
+
+.news-search input:focus{
+    border-color:#0B57D0;
+}
+
+.news-search button{
+    background:#0B57D0;
+    color:#fff;
+    border:none;
+    padding:0 28px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.news-search button:hover{
+    background:#0845a5;
+}
+
+@media(max-width:768px){
+
+.news-search{
+    flex-direction:column;
+}
+
+.news-search button{
+    height:55px;
+}
+
+}

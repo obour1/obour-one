@@ -1151,4 +1151,51 @@ nav a.active::after{
 }
  
 }
+/* ================= BREADCRUMB ================= */
+ 
+.breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    color:#6b7280;
+    margin-bottom:25px;
+}
+ 
+.breadcrumb a{
+    color:#0B57D0;
+    text-decoration:none;
+    font-weight:700;
+}
+ 
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+ 
+.breadcrumb span{
+    color:#9ca3af;
+}
+ 
+/* ================= NEWS SIDEBAR (main + aside layout) ================= */
+ 
+.news-main{
+    min-width:0;
+}
+ 
+.news-sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    align-self:start;
+    position:sticky;
+    top:120px;
+}
+ 
+@media(max-width:992px){
+ 
+    .news-sidebar{
+        position:static;
+    }
+ 
+}
  

@@ -1258,3 +1258,71 @@ img{
     background:var(--secondary);
     border-radius:20px;
 }
+/* ================= HOMEPAGE SPLIT HERO (scoped to .hero-home only) ================= */
+
+.hero-home .hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+    max-width:1280px;
+    text-align:right;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.hero-home .hero-content h1{
+    font-size:64px;
+    margin-bottom:10px;
+}
+
+.hero-home .hero-content h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.hero-home .hero-content p{
+    max-width:650px;
+    margin-bottom:35px;
+    margin-right:0;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    max-width:100%;
+    filter:drop-shadow(0 20px 40px rgba(0,0,0,.25));
+}
+
+@media(max-width:900px){
+
+    .hero-home .hero-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-home .hero-content h1{
+        font-size:46px;
+    }
+
+    .hero-home .hero-content h2{
+        font-size:28px;
+    }
+
+}

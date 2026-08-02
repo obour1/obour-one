@@ -1,0 +1,17 @@
+{
+  "name": "Obour One",
+  "short_name": "Obour One",
+  "description": "One City • One Voice",
+  "start_url": "/obour-one/",
+  "display": "standalone",
+  "background_color": "#0B57D0",
+  "theme_color": "#0B57D0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

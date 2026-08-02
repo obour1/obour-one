@@ -1435,3 +1435,25 @@ nav{
 }
 
 }
+#backToTop{
+position:fixed;
+bottom:25px;
+left:25px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#FF8300;
+color:#fff;
+font-size:24px;
+cursor:pointer;
+display:none;
+z-index:9999;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+#backToTop:hover{
+transform:translateY(-5px);
+background:#0B57D0;
+}

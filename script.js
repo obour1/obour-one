@@ -37,3 +37,19 @@ if (backToTop) {
         });
     });
 }
+
+/* ===== COPY ARTICLE LINK ===== */
+document.addEventListener('DOMContentLoaded', function () {
+    var copyBtn = document.querySelector('.share-copy');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(window.location.href).then(function () {
+                copyBtn.textContent = '✅';
+                setTimeout(function () {
+                    copyBtn.textContent = '🔗';
+                }, 1500);
+            });
+        });
+    }
+});

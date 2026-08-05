@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-console.log("Supabase Ready:", supabase);
+console.log("Supabase Ready:", window.obourSupabase);
 
 async function testConnection() {
-  const { data, error } = await supabase
+  const { data, error } = await window.obourSupabase
     .from("news")
     .select("*");
 

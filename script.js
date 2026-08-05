@@ -54,3 +54,54 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+
+async function loadNews() {
+
+    const newsContainer = document.getElementById("newsContainer");
+
+    if (!newsContainer) return;
+
+    const { data, error } = await window.obourSupabase
+        .from("news")
+        .select("*")
+        .order("id", { ascending: false })
+        .limit(6);
+
+    if (error) {
+        console.log("News Error:", error);
+        return;
+    }
+
+    if (data.length === 0) {
+        console.log("No news found");
+        return;
+    }
+
+    newsContainer.innerHTML = "";
+
+    data.forEach(news => {
+
+        newsContainer.innerHTML += `
+
+        <div class="news-card">
+
+            <img src="${news.image}" alt="${news.title}" loading="lazy">
+
+            <h3>${news.title}</h3>
+
+            <p>${news.summary}</p>
+
+            <a href="pages/news.html">
+                اقرأ المزيد →
+            </a>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+loadNews();

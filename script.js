@@ -57,7 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 async function loadNews() {
-
+    
+console.log("loadNews started");
+    
     const newsContainer = document.getElementById("newsContainer");
 
     if (!newsContainer) return;

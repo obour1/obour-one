@@ -53,3 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+console.log("Supabase Ready:", supabase);
+
+async function testConnection() {
+  const { data, error } = await supabase
+    .from("news")
+    .select("*");
+
+  console.log("Data:", data);
+  console.log("Error:", error);
+}
+
+testConnection();

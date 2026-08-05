@@ -105,3 +105,4 @@ async function loadNews() {
 }
 
 loadNews();
+console.log("loadNews finished");

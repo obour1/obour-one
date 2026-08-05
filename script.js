@@ -53,15 +53,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-console.log("Supabase Ready:", window.obourSupabase);
 
-async function testConnection() {
-  const { data, error } = await window.obourSupabase
-    .from("news")
-    .select("*");
-
-  console.log("Data:", data);
-  console.log("Error:", error);
-}
-
-testConnection();

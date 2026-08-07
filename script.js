@@ -112,27 +112,24 @@ async function loadNews() {
         newsContainer.innerHTML += `
             <div class="news-card">
 
-                <img src="${news.image_url || 'https://picsum.photos/400/250'}"
-                     alt="${news.title}"
-                     loading="lazy">
+                <img src="${news.image_url || 'https://picsum.photos/400/250'}" alt="${news.title}" loading="lazy">
 
                 <h3>${news.title}</h3>
 
                 <p>${news.summary || ""}</p>
 
-                <a href="pages/news.html">
-                    اقرأ المزيد →
-                </a>
+                <a href="pages/news.html">اقرأ المزيد →</a>
 
             </div>
         `;
 
     });
 
-    console.log("News Loaded Successfully");
+    console.log("News loaded successfully");
 
 }
 
 loadNews();
 
 console.log("loadNews finished");
+
